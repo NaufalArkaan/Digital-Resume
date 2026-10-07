@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Resume digital Nama Anda, Web Developer.">
+    <title>Naufal Arkaan | Resume Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Outfit:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <a class="skip" href="#utama">Lewati ke konten</a>
+    <div class="progress" id="progress" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <nav class="nav container" aria-label="Navigasi utama">
+            <a class="brand" href="#beranda">NA<span>.</span></a>
+            <button class="burger" id="burger" aria-expanded="false" aria-controls="menu"
+                aria-label="Buka menu"><i></i><i></i><i></i></button>
+            <ul class="menu" id="menu">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#keahlian">Keahlian</a></li>
+                <li><a href="#proyek">Proyek</a></li>
+                <li><a href="#pengalaman">Pengalaman</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+            <button class="theme" id="theme" aria-label="Ganti tema gelap atau terang">◐</button>
+        </nav>
+    </header>
+
+    <main id="utama">
+        <section id="beranda" class="hero container">
+            <div class="hero-text">
+                <p class="hello">Halo, saya</p>
+                <h1>Naufal Arkaan</h1>
+                <p class="role">Saya seorang <span id="typed" aria-live="polite"></span><span class="caret">|</span></p>
+                <p class="lead">Mahasiswa Teknik Informatika yang senang membangun website cepat, rapi, dan nyaman
+                    dipakai.</p>
+                <div class="actions">
+                    <a class="btn btn-primary" href="#proyek">Lihat proyek</a>
+                    <a class="btn btn-ghost" href="#kontak">Hubungi saya</a>
+                </div>
+            </div>
+            <figure class="hero-card" id="tilt">
+                <div class="avatar" aria-hidden="true">NA</div>
+                <figcaption>
+                    <strong>Tersedia untuk magang</strong>
+                    <span>Malang, Jawa Timur</span>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section id="tentang" class="section container">
+            <h2>Tentang saya</h2>
+            <div class="about">
+                <p>Saya mahasiswa semester 5 yang fokus pada pengembangan web. Saya suka mengubah ide menjadi antarmuka
+                    yang jelas, ringan, dan bisa diakses semua orang.</p>
+                <dl class="stats">
+                    <div>
+                        <dt>Proyek selesai</dt>
+                        <dd><span class="count" data-to="12">0</span>+</dd>
+                    </div>
+                    <div>
+                        <dt>Teknologi dikuasai</dt>
+                        <dd><span class="count" data-to="8">0</span></dd>
+                    </div>
+                    <div>
+                        <dt>IPK</dt>
+                        <dd><span class="count" data-to="3.9" data-dec="1">0</span></dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <section id="keahlian" class="section container">
+            <h2>Keahlian</h2>
+            <ul class="skills">
+                <li>
+                    <div class="skill-head"><span>HTML5 Semantik</span><b>90%</b></div>
+                    <div class="bar">
+                        <div class="fill" data-w="90"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-head"><span>CSS &amp; Layouting</span><b>85%</b></div>
+                    <div class="bar">
+                        <div class="fill" data-w="85"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-head"><span>JavaScript</span><b>75%</b></div>
+                    <div class="bar">
+                        <div class="fill" data-w="75"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-head"><span>Git &amp; GitHub</span><b>70%</b></div>
+                    <div class="bar">
+                        <div class="fill" data-w="70"></div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="proyek" class="section container">
+            <h2>Proyek</h2>
+            <div class="filters" role="group" aria-label="Filter proyek">
+                <button class="chip active" data-f="all">Semua</button>
+                <button class="chip" data-f="web">Web</button>
+                <button class="chip" data-f="desain">Desain</button>
+            </div>
+            <div class="grid" id="grid">
+                <article class="card" data-c="web">
+                    <h3>Toko Kopi Online</h3>
+                    <p>Landing page produk dengan keranjang sederhana dan tampilan mobile-first.</p>
+                    <p class="tags">HTML · CSS · JS</p>
+                </article>
+                <article class="card" data-c="desain">
+                    <h3>Redesain Aplikasi Kampus</h3>
+                    <p>Prototipe antarmuka jadwal kuliah yang lebih mudah dibaca.</p>
+                    <p class="tags">Figma · UX</p>
+                </article>
+                <article class="card" data-c="web">
+                    <h3>Blog Pribadi</h3>
+                    <p>Blog statis dengan mode gelap dan navigasi ramah keyboard.</p>
+                    <p class="tags">HTML · CSS</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="pengalaman" class="section container">
+            <h2>Pengalaman &amp; pendidikan</h2>
+            <ol class="timeline">
+                <li><time>2024 – sekarang</time>
+                    <h3>S1 Teknik Informatika</h3>
+                    <p>Universitas Muhammadiyah Malang, fokus Rekayasa Perangkat Lunak dan Data Science.</p>
+                </li>
+                <li><time>2025</time>
+                    <h3>Asisten Laboratorium Informatika</h3>
+                    <p>Membimbing 30 mahasiswa belajar HTML dan CSS.</p>
+                </li>
+                <li><time>2024</time>
+                    <h3>Developer Community UMM</h3>
+                    <p>Membuat Website dan Belajar Ilmu Software Engineering.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section id="kontak" class="section container">
+            <h2>Kontak</h2>
+            <div class="contact">
+                <address>
+                    <p>Ada proyek atau lowongan? Kirim pesan, saya balas dalam 24 jam.</p>
+                    <p><a href="mailto:naufalarkaan25@gmail.com">naufalarkaan25@gmail.com</a></p>
+                    <p><a href="https://github.com/NaufalArkaan" target="_blank" rel="noopener">github.com/NaufalArkaan</a></p>
+                </address>
+                <form id="form" novalidate>
+                    <label>Nama<input name="nama" required minlength="3" autocomplete="name"></label>
+                    <label>Email<input name="email" type="email" required autocomplete="email"></label>
+                    <label>Pesan<textarea name="pesan" rows="4" required minlength="10"></textarea></label>
+                    <p class="msg" id="msg" role="status"></p>
+                    <button class="btn btn-primary" type="submit">Kirim pesan</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Naufal Arkaan. Dibuat dengan HTML dan CSS murni.</p>
+    </footer>
+    <button class="top" id="top" aria-label="Kembali ke atas">↑</button>
+</body>
+
+</html>
